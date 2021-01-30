@@ -1,0 +1,30 @@
+
+html {
+    background-color: #F9E0A8 ;
+ }
+
+ h1, h2, h3, div {
+    color: #BD5E21;
+ }
+ 
+ #open {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2em;
+ }
+ 
+ .third {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+ }
+ 
+ li {
+    color: #BD5E21;
+ }
+ 
+ a:visited, a:link {
+    color: #7496d2;
+    }
+ 
+ a:hover {
+    color: #DDE8E0 ;
+ }
