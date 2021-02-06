@@ -1,12 +1,15 @@
 
 html {
-    background-color: #F9E0A8 ;
+    background-color: #f4f1de;
  }
 
- h1, h2, h3, div {
-    color: #BD5E21;
+ h1, h2, h3 {
+    color: #283618;
  }
  
+ .row {
+    color: #d4a373;
+ }
  #open {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.2em;
@@ -18,13 +21,13 @@ html {
  }
  
  li {
-    color: #BD5E21;
+    color: #6b705c;
  }
  
  a:visited, a:link {
-    color: #7496d2;
+    color: #6b705c;
     }
  
  a:hover {
-    color: #DDE8E0 ;
+    color: b7b7a4;
  }
