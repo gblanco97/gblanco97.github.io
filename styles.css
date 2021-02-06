@@ -4,7 +4,7 @@ html {
  }
 
  h1, h2, h3 {
-    color: #283618;
+    color: #6b705c;
  }
  
  .row {
@@ -29,5 +29,5 @@ html {
     }
  
  a:hover {
-    color: b7b7a4;
+    color: #b7b7a4;
  }
