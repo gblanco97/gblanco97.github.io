@@ -7,7 +7,7 @@ html {
     color: #6b705c;
  }
  
- .row {
+ .col-md, .col-sm {
     color: #d4a373;
  }
  #open {
