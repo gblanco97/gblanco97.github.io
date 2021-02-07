@@ -6,21 +6,9 @@ function briefTitle(){
 }
 
 //time function//
-function getTime(i) {
-    if (i < 10) {
-      i = "0" + i;
+function getTime() {
+    var currentdate = new Date(); 
+    var timenow = + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+      document.getElementById("time").innerHTML = "It is "+timenow;
     }
-    return i;
-  }
-  
-  function time() {
-    var date = new Date();
-    var hh = date.getHours();
-    var mm = date.getMinutes();    
-    // adding 0 for single digits
-    
-    mm = checkTime(mm);
-    ss = checkTime(ss);
-    document.getElementById('time').innerHTML = hh + ":" + mm;
-  }
-  
