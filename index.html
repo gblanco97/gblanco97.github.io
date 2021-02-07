@@ -50,8 +50,18 @@
 
 <!--time function-->
 
-<h2 class="d-none d-sm-block">Thank you for visiting at: </h2>
-<div id="time"></div>
+<div>
+  <h2 class="d-none d-sm-block">Thank you for visiting at: </h2>
+  <script>
+    var now  = new Date();        // current date/time
+    var hrs  = now.getHours();    // 0 to 23
+    var mins = now.getMinutes();
+    document.writeln("<p>It is " + now + "</p>");
+    document.writeln("<p>Hour is " + hrs + "</p>");
+    document.writeln("<p>Minute is " + mins + "</p>");
+    document.writeln("<p>Second is " + secs + "</p>");
+  </script>
+</div>
 
 <!--rows-->
 <div class="container-md">
