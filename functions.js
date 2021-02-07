@@ -7,8 +7,7 @@ function briefTitle(){
 
 //time function//
 function getTime() {
-    var currentdate = new Date(); 
-    var timenow = + currentdate.getHours() + ":"  
-                + currentdate.getMinutes() + ":" 
-      document.getElementById("time").innerHTML = "It is "+timenow;
+    let selectedElement = document.getElementById("time");
+    console.log(selectedElement);
+    selectedElement.innerText = new Date()
     }
