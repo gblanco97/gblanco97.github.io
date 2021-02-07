@@ -1,5 +1,5 @@
 
-html, .bg {
+html {
     background-color: #f4f1de;
  }
 
@@ -11,12 +11,12 @@ html, .bg {
     color: #a5a58d;
  }
  
- .bg-dark {
-    color: #6b705c;
+ .navbar {
+    background-color: #6b705c !important;
  }
 
- .bg-success {
-    color: #CB997E;
+ .btn {
+    background-color: #CB997E;
  }
 
  #open {
