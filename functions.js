@@ -6,24 +6,10 @@ function briefTitle(){
 }
 
 //time function//
-function currentTime(i){
-    if (i < 10) {
-        i = "0" + i;
-      }
-      return i;
-    }
-    
-    function startTime() {
-      var today = new Date();
-      var h = today.getHours();
-      var m = today.getMinutes();
-      // add a zero in front of numbers<10
-      m = checkTime(m);
-      s = checkTime(s);
-      document.getElementById('time').innerHTML = h + ":" + m;
-      t = setTimeout(function() {
-        startTime()
-      }, 500);
-    }
-    startTime();
+
+var date = new Date();   // get a new date
+var n = date.toDateString();   // get date as string
+var time = date.toLocaleTimeString();   // get time as string
+// set the innerHTML of that element to the date a space the time
+document.getElementById('time').innerHTML = n + ' ' + time;
     
