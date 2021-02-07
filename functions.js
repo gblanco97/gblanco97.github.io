@@ -6,8 +6,21 @@ function briefTitle(){
 }
 
 //time function//
-function getTime(){
-    let selectedElement = document.getElementById("time");
-    getTime.push(date.toLocaleTimeString).innerHTML = time;
-}
+function getTime(i) {
+    if (i < 10) {
+      i = "0" + i;
+    }
+    return i;
+  }
+  
+  function time() {
+    var date = new Date();
+    var hh = date.getHours();
+    var mm = date.getMinutes();    
+    // adding 0 for single digits
     
+    mm = checkTime(mm);
+    ss = checkTime(ss);
+    document.getElementById('time').innerHTML = hh + ":" + mm;
+  }
+  
