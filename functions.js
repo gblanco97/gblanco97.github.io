@@ -13,12 +13,22 @@ function getTime() {
     }
 
 //array function//
-    function parseArray(array) {
-        var happy = prompt("add something that makes you happy"); //ask for input
-        array.push(happy); //.push method adds a value to an array
-        var x = array.sort(); //.sort method sorts values in an array
-        var y = x.length; //.length method accesses the length of an array
-        console.log(x[y-1]); //log the last item in the array
-        console.log(array); //log the entire array
-      }
-      var newArray = ["coffee", "sunshine", "snacks", "dogs"];
+function happySort(happiness) {
+    var happy = prompt('include something that makes you happy');
+    happy = happy.toLowerCase();
+    happyArray.push(happy);
+    var sortedHappy = happyArray.sort();
+    varhappyAsUL - sortedHappy.map(function (i) {
+        return i
+    })
+
+    document.getElementById('happyList').innerHTML =
+    '<li>' + happyAsUL.join('</li><li>') + '<li>'
+}
+
+function lastHappy(){
+    index = happyArray.length - 1;
+    document.getElementById("lasthappy").innerHTML = happyArray[index];
+}
+
+newArray = ["coffee", "sunshine", "snacks", "dogs"];
