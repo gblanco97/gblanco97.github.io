@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="/styles.css">
     <script src="functions.js"></script>
 
-    <title>Wiki API</title>
+    <title >Meet Boti</title>
   </head>
-  <body onload="mapLoad()">
+  <body>
 
     <!--nav bar-->
     <nav class="navbar navbar-expand-lg">
@@ -41,30 +41,25 @@
     </nav>
 
 <!--header-->
-<div class="container pt-3">
-  <h1>Wiki API</h1>
-  <div id=""></div>
+<div class="container pt-5">
+  <h1 id="mainTitle">Meet Boti</h1>
+    <h2 class="d-none d-sm-block">Please meet my favorite, Boti the bulldog</h2>
+
+  <!--rows-->
+<div class="container-md">
+    <div class="row">
+        <div class="col-md display-md py-3">For your daily dose of serotonin, below is a snippet of my bulldog pup, who I love very much. He is too good for this world.</div>
+        <div class="col-md display-md py-3">His name is Boti. Some of his favorite things include treats, naps, and crying when he spends too much time outside.</div>
+        <div class="col-md display-md py-3">Fun fact: one time he got stuck under a baby gate and was just too lazy to get out so he spent a whole morning there, defeated.</div>
+    </div>
 </div>
-
-<!--enter search term-->
-<form id="wikiForm" onsubmit="wikiAPI(); event.previewDefault()">
-    <div class="row pt-3">
-        <div class="col mt-3">
-          <input id="searchTerm" name="searchTerm" type="text" class="form-control" placeholder="Enter your search term here...">
-        </div>
-      </div>
-</form>
-
-<!-- button-->
-<div class="container pt-3">
-<button id="wikiButton" type="submit" class="btn text-white" onclick="wikiAPI()">Search</button>
-</div>
-
-<!-- Output from JS function loads here -->
-<div class="container" id="wikiContainer">
-  <div class="row" id="wiki"></div>
-</div>
-
+<!--pictures-->
+<div class="container">
+  <div class="row">
+    <div class="col-md display-md py-3"> <img src="/images/pup.jpg" class="img-thumbnail" alt="..."></div>
+    <div class="col-md display-md py-3"> <img src="/images/pup2.jpg" class="img-thumbnail" alt="..."></div>
+    <div class="col-md display-md py-3"> <img src="/images/pup3.jpg" class="img-thumbnail" alt="..."></div>
+  </div>
 </div>
 
 <!--footer-->
@@ -74,8 +69,5 @@
   </div>
 </footer>
 
-<!--load js files-->
-<script src="/functions.js"></script>
-<script src="/wikiAPI.js"></script>
   </body>
 </html>
