@@ -71,7 +71,7 @@ function mapLoad(){
     L.marker(latLng).addTo(map)
     .bindPopup("<b>UChicago<br>Campus</b>").openPopup();
 
-//add a nifty click event
+//add a nifty event
     var popup = L.popup();
   
     function onMapClick(e) {
