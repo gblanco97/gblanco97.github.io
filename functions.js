@@ -35,21 +35,32 @@ newArray = ["coffee", "sunshine", "snacks", "dogs"];
 
 //map API//
 function mapLoad(){
-    var latLng = [41.789649, -87.599702]; //Define the lat lon coordinate
+    var latLng = [41.789649, -87.599702]; //Define the lat long coordinate
   
+    //set attribution and access key url
     var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
     'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
   
+    //define 2-tile layer variables
+    var streets = L.tileLayer(mbUrl, {
+        id: 'mapbox/streets-v11',
+        titleSize: 510,
+        zoomOffset: -1,
+        attribution: mbAttr}
+        );
+
     var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
     streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
   
+    //define map object
     var map = L.map('map', {
       center: latLng,
       zoom: 16,
       layers: [streets]
     });
   
+//add tile layers to base layer object, add to map, add a marker with a pop-up
     var baseLayers = {
       "Grayscale": grayscale,
       "Streets": streets
@@ -60,7 +71,7 @@ function mapLoad(){
     L.marker(latLng).addTo(map)
     .bindPopup("<b>UChicago<br>Campus</b>").openPopup();
 
-//Click event
+//add a nifty click event
     var popup = L.popup();
   
     function onMapClick(e) {
