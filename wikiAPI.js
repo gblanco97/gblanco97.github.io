@@ -16,8 +16,16 @@ function wikiAPI() {
             newDiv.setAttribute('class', 'row h4',);
             document.getElementById("wiki").appendChild(newDiv);
             newDiv.innerText = pages[i].title;
+
+            var pageSource = "https://eng.wikipedia.org/?curlid="
+            var newAnchor = document.createElement("a");
+            newAnchor.href = pageSource+pages[i].pageid;
+            newAnchor.className = 'd-block';
+            newAnchor.innerText = pages [i].title;
+            document.getElementById("wiki").appendChild(newAnchor);
         };
     }
- 
     connect.send();
 }
+
+
