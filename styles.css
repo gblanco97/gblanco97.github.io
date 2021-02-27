@@ -1,18 +1,21 @@
 
-html {
+html, .bg {
     background-color: #f4f1de !important;
  }
 
  h1, h2, h3 {
     color: #6b705c;
+    background-color: #f4f1de;
  }
 
  body {
     color: #a5a58d;
+    background-color: #f4f1de;
  }
  
  .navbar {
     background-color: #283618 !important;
+    bottom: ;
  }
 
  .btn {
@@ -41,4 +44,10 @@ html {
     color: #ddbea9;
  }
 
- 
+ .footer {
+    background-color: #283618 !important;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+ }
