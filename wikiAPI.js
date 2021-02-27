@@ -9,7 +9,7 @@ function wikiAPI() {
     connect.onload = function () {
         var wikiThing = JSON.parse(this.response);
         //console.log(wikiThing);
-        //console.log(wikiThing.query.pages);
+        console.log(wikiThing.query.pages);
         var pages = wikiThing.query.pages;
         for (var i in pages) {
             var newDiv = document.createElement("div");
