@@ -1,16 +1,16 @@
 
 html, .bg {
-    background-color: #f4f1de !important;
+    background-color: #edeae3 !important;
  }
 
  h1, h2, h3, h4 {
     color: #6b705c;
-    background-color: #f4f1de;
+    background-color: #edeae3;
  }
 
  body {
     color: #a5a58d;
-    background-color: #f4f1de;
+    background-color: #edeae3;
  }
  
  .navbar {
