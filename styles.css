@@ -19,6 +19,7 @@ html, .bg {
 
  .btn {
     background-color: #8a9081;
+    border-color: #8a9081;
  }
 
  #open {
@@ -40,7 +41,7 @@ html, .bg {
     }
  
  a:hover {
-    color: #ddbea9 !important; 
+    color: #ddbea9; 
  }
 
  .footer {
@@ -55,3 +56,9 @@ html, .bg {
     height: 400px;
     width: 100%
  }
+
+.btn:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+   color: #8a9a97;
+   background-color: #8a9a97;
+   border-color: #8a9a97; /*set the color you want here*/
+}
