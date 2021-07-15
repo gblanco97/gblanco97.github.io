@@ -40,7 +40,7 @@ html, .bg {
     }
  
  a:hover {
-    color: #ddbea9;
+    color: #ddbea9; !important
  }
 
  .footer {
