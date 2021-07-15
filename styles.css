@@ -33,7 +33,7 @@ html, .bg {
  }
  
  li {
-    color: #6b705c;
+    color: #6b705c !important;
  }
  
  a:link {
